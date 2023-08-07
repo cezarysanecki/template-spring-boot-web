@@ -15,6 +15,20 @@ Of course there are Spring Boot dependencies:
 - JPA
 - more will be added when required...
 
+## Usage
+
+To use this template you have to:
+
+- copy project
+- change origin - `git remote set-url origin {{ YOUR-URL }}`
+- change `rootProject.name` in [settings.gradle](/settings.gradle)
+- change name of starter class [TemplateForSpringBootApplication.java](/src/main/java/pl/cezarysanecki/templateforspringboot/TemplateForSpringBootApplication.java)
+- change name of main package
+  - in [main](/src/main/java/pl/cezarysanecki/templateforspringboot)
+  - in [test](/src/test/groovy/pl/cezarysanecki/templateforspringboot)
+- squash all commits to one - `git reset $(git commit-tree HEAD^{tree} -m "init commit")`
+- push code to repo - `git push`
+
 ## Liquibase
 
 Liquibase will be configured in XML files. The main one will be `db.changelog-master.xml`. To do this
