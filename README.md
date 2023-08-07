@@ -26,8 +26,10 @@ To use this template you have to:
 - change name of main package
   - in [main](/src/main/java/pl/cezarysanecki/templateforspringboot)
   - in [test](/src/test/groovy/pl/cezarysanecki/templateforspringboot)
-- squash all commits to one - `git reset $(git commit-tree HEAD^{tree} -m "init commit")`
-- push code to repo - `git push`
+- squash all commits to one
+  - reset all commits - `git reset --soft $(git rev-list --max-parents=0 HEAD)`
+  - commit all changes as one initial commit - `git commit --amend -m "init commit"`
+- push to repo - `git push --force`
 
 ## Liquibase
 
