@@ -45,4 +45,6 @@ spring:
 
 ## Spock
 
-Just added.
+Testing with Spock is quite convenient. In this template I use Groovy 3 with compatible Spock 
+[for this version](/build.gradle). Created simple test for startup with abstract class 
+[`AbstractSpec`](/src/test/groovy/pl/cezarysanecki/templateforspringboot/AbstractSpec.groovy). All is set to use.
