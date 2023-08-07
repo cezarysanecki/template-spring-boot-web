@@ -6,6 +6,7 @@ It will contain configuration for all libraries that are most commonly used.
 - [Liquibase](https://www.liquibase.org/)
 - [Lombok](https://projectlombok.org/)
 - [H2](https://www.h2database.com/)
+- [Spock](https://spockframework.org/)
 - more will be added when required...
 
 Of course there are Spring Boot dependencies:
@@ -41,3 +42,7 @@ spring:
     username: sa
     password:
 ```
+
+## Spock
+
+Just added.
