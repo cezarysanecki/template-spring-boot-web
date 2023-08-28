@@ -20,7 +20,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Documented
 @Constraint(validatedBy = EnumHibernateValidator.class)
 public @interface EnumHibernate {
-  String message() default "{javax.validation.constraints.enum.message.default}";
+  String message() default "{jakarta.validation.constraints.enum.message.default}";
 
   Class<?>[] groups() default {};
 
@@ -37,7 +37,7 @@ class EnumHibernateValidator implements ConstraintValidator<EnumHibernate, CharS
         .map(Enum::name)
         .collect(Collectors.joining(", "));
 
-    message = String.format("{javax.validation.constraints.enum.message}: %s", acceptedValues);
+    message = String.format("{jakarta.validation.constraints.enum.message}: %s", acceptedValues);
   }
 
   @Override
